@@ -48,5 +48,9 @@
                 "path": "./fileicons/modl-icons.json"
             }
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/1p2ao/ModL.git"
     }
 }
