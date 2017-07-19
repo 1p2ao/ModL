@@ -1,0 +1,13 @@
+{
+    "iconDefinitions": {
+        "_extendsim": {
+            "iconPath": "./ExtendSim.png"
+        }
+    },
+    "fileExtensions": {
+        "modl": "_extendsim"
+    },
+    "languageIds": {
+        "modl": "_extendsim"
+    }
+}

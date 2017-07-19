@@ -1,0 +1,68 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ModL",
+	"patterns": [
+		{ 
+			"include" : "source.c" 
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#keywordscontrol"
+		},
+		{
+			"include": "#keywordsoperator"
+		},
+		{
+			"include": "#storagetype"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.modl",
+				"match": "\\b(true|false|on|blank|constant|is|Pi)\\b"
+			}]
+		},
+		"keywordscontrol": {
+			"patterns": [{
+				"name": "keyword.control.modl",
+				"match": "\\b(if|else|do|while|for|switch|case|abort|break|continue|return|goto|error)\\b"
+			}]
+		},
+		"keywordsoperator": {
+			"patterns": [{
+				"name": "keyword.operator.modl",
+				"match": "\\b(not|and|or)\\b"
+			}]
+		},
+		"storagetype": {
+			"patterns": [{
+				"name": "storage.type.modl",
+				"match": "\\b(procedure|integer|long|real|string|str255|str15|str31)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.modl",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.modl",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.modl"
+}

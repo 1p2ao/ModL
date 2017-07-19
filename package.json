@@ -1,0 +1,52 @@
+{
+    "name": "modl",
+    "displayName": "ModL",
+    "description": "Language support for ModL to Visual Studio Code",
+    "version": "0.1.7",
+    "publisher": "ao",
+    "icon": "images/icon.png",
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "extensionDependencies": [
+        "ms-vscode.cpptools"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "modl",
+                "aliases": [
+                    "ModL",
+                    "modl"
+                ],
+                "extensions": [
+                    "modl"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "modl",
+                "scopeName": "source.modl",
+                "path": "./syntaxes/modl.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "modl",
+                "path": "./snippets/snippets.json"
+            }
+        ],
+        "iconThemes": [
+            {
+                "id": "modl-icons",
+                "label": "ModL",
+                "path": "./fileicons/modl-icons.json"
+            }
+        ]
+    }
+}
