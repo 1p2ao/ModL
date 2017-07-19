@@ -2,7 +2,7 @@
     "name": "modl",
     "displayName": "ModL",
     "description": "Language support for ModL to Visual Studio Code",
-    "version": "0.1.8",
+    "version": "0.1.10",
     "publisher": "ao",
     "icon": "images/icon.png",
     "engines": {

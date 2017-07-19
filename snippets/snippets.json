@@ -173,7 +173,7 @@
             "",
             "procedure DoDefineDbLink()",
             "{",
-            "    DbLink_Define(\"${1:Database1}\", \"${2:Table}\", \"${3:FieldKey}\", \"${4:wKey}\", \"${5:FieldPopup}\", \"${6:wPopup}\", \"${7:IgnoreIfNotLinked}\", \"${8:IgnoreClone}\");",
+            "    DbLink_Define(\"${1:Database1}\", \"${2:Table}\", \"${3:FieldKey}\", \"${4:wKey}\", \"${5:FieldPopup}\", \"${6:wPopup}\", ${7:IgnoreIfNotLinked}, ${8:IgnoreClone});",
             "    DbLink_AddLink(\"MyRecord()\", \"wRecord\");",
             "    DbLink_AddLink(\"FieldTexte\", \"AnimObj(1)\");",
             "    DbLink_AddLink(\"FieldValeur\", \"wValeur\");",
@@ -216,7 +216,7 @@
             "{",
             "    ",
             "}",
-
+            "",
             "procedure DoItemEntered(integer liNthConIn, integer liItemIndex)",
             "{",
             "    $0",
